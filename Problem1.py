@@ -30,7 +30,7 @@ class Solution(object):
         id_map = {}
 
         for emp in employees: # tc : O(n)
-            id_map[emp.id] = emp
+            id_map[emp.id] = emp # by adding the obejct itself, its easier to get the importance and its subordiantes 
 
         q = deque()
         q.append(id)
